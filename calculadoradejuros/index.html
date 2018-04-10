@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Calculadora </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script src="javascript/CalculodoValorComposto.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+
+   
+</head>
+<body>
+    <nav class="navbar navbar-inverse" id="header">
+    
+    </nav>
+    <div class="container-fluid">
+        <div class="row content">
+    
+                    
+            <div align="center" class="container">
+                <form id="contact" name="formulario">
+                    <h2 align="center">Vamos Calcular os Juros Compostos?</h2>
+                    
+                    </br>
+                    <fieldset>
+                        <input placeholder="Capital Inicial" type="text" name="CapInicialFront" tabindex="1" required autofocus>
+                        <span id="c"></span>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Capital Mensal" type="text" name="CapMensal" tabindex="2" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Taxa de Juros" type="text" name="tj" tabindex="3" required>
+                    </fieldset>
+                    <fieldset>
+                       Periodo:<input placeholder="Periodo" type="number" id="periodo" min="1"  max="40" required>
+                        
+                    </fieldset>
+                    <fieldset>
+					
+					
+					 <select name="pma">
+                            <option value="1">Meses</option>
+                            <option value="2">Anos</option>
+                        </select>
+					
+                    </fieldset>
+                    <fieldset>
+
+                        <button type="button" class="btn btn-primary" onclick="return CalcularJuros()">Calcular</button>
+
+                    </fieldset>
+
+                    <label style="color:black">Total valor Investimento  R$ &nbsp<span id="ValortotalAcumulado"></span> </label>
+                    <p style="color:black">  Total valor ganho em Juros R$ &nbsp<span id="ValortotalJuros"> </span> </p>
+                    <p style="color:black" style="color:black">Valor Total R$&nbsp <span id="Valortotal"> </span></p>
+
+			</form>
+
+            </div>
+            
+            </div>
+        </div>
+      
+    
+
+    <footer class="container-fluid text-center"></footer>
+
+</body>
+</html>
